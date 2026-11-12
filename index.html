@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BON PLAN SHOP</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 180px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #790020;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 20px;
+  background: #f7f7f7;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #666;
+}
+
+section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.product h3 {
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.product a {
+  display: inline-block;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: 6px;
+}
+
+.product a:hover {
+  background: #790020;
+}
+
+.brand {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+.brand a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #790020;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="bps.jpg" alt="Logo Bon Plan Shop">
+  </div>
+</header>
+
+<nav>
+  <a href="#promotions">Promotions</a>
+  <a href="#nouveautes">Nouveautés</a>
+  <a href="#running">Running</a>
+  <a href="#chaussures">Chaussures</a>
+  <a href="#marques">Marques</a>
+</nav>
+
+<div class="hero">
+  <h1>LES MEILLEURS BONS PLANS</h1>
+  <p>Découvre les chaussures et équipements sportifs du moment.</p>
+</div>
+
+<section id="promotions">
+  <h2>🔥 Promotions</h2>
+
+  <div class="products">
+
+    <article class="product">
+      <img src="images/air-max-90.jpg" alt="Nike Air Max 90">
+      <h3>Nike Air Max 90</h3>
+      <p>Voir le prix actuel sur Nike</p>
+      <a href="https://www.nike.com/fr/w?q=Air%20Max%2090" target="_blank">Voir l'offre</a>
+    </article>
+
+    <article class="product">
+      <img src="images/air-max-plus.jpg" alt="Nike Air Max Plus">
+      <h3>Nike Air Max Plus</h3>
+      <p>Voir le prix actuel sur Nike</p>
+      <a href="https://www.nike.com/fr/w?q=Air%20Max%20Plus" target="_blank">Voir l'offre</a>
+    </article>
+
+    <article class="product">
+      <img src="images/air-max-95.jpg" alt="Nike Air Max 95">
+      <h3>Nike Air Max 95</h3>
+      <p>Voir le prix actuel sur Nike</p>
+      <a href="https://www.nike.com/fr/w?q=Air%20Max%2095" target="_blank">Voir l'offre</a>
+    </article>
+
+    <article class="product">
+      <img src="images/air-max-270.jpg" alt="Nike Air Max 270">
+      <h3>Nike Air Max 270</h3>
+      <p>Voir le prix actuel sur Nike</p>
+      <a href="https://www.nike.com/fr/w?q=Air%20Max%20270" target="_blank">Voir l'offre</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="nouveautes">
+  <h2>✨ Nouveautés</h2>
+  <p>Les nouvelles chaussures et équipements arrivent bientôt.</p>
+</section>
+
+<section id="running">
+  <h2>🏃 Running</h2>
+  <p>Découvre notre sélection dédiée à la course à pied.</p>
+</section>
+
+<section id="chaussures">
+  <h2>👟 Chaussures</h2>
+  <p>Retrouve les modèles incontournables.</p>
+</section>
+
+<section id="marques">
+  <h2>🏷️ Nos marques</h2>
+
+  <div class="products">
+    <div class="brand">
+      <h3>Nike</h3>
+      <a href="https://www.nike.com/fr/" target="_blank">Découvrir</a>
+    </div>
+
+    <div class="brand">
+      <h3>Adidas</h3>
+      <a href="https://www.adidas.fr/" target="_blank">Découvrir</a>
+    </div>
+
+    <div class="brand">
+      <h3>ASICS</h3>
+      <a href="https://www.asics.com/fr/fr-fr/" target="_blank">Découvrir</a>
+    </div>
+
+    <div class="brand">
+      <h3>New Balance</h3>
+      <a href="https://www.newbalance.fr/" target="_blank">Découvrir</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 BON PLAN SHOP</p>
+  <p>Les bons plans sportifs au même endroit.</p>
+</footer>
+
+</body>
+</html>
